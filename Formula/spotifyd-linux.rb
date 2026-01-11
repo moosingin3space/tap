@@ -12,12 +12,9 @@ class SpotifydLinux < Formula
   end
 
   bottle do
-    sha256 cellar: :any,                 arm64_tahoe:   "a7a814a9c313572487129d39e54731bc17a195e4b682ae581602448272abcdd5"
-    sha256 cellar: :any,                 arm64_sequoia: "dec0ea296e4ef77db7afcc84910deea38ef162f5cadbf2d7fc2d9986a4ca5458"
-    sha256 cellar: :any,                 arm64_sonoma:  "d9d891fefbd148e3960824fc7924ed89b20d73e150adfdbc36265df529c487a2"
-    sha256 cellar: :any,                 sonoma:        "a4a0e77cd126c0eb50988c3e3c2820e963cdf9b8fe0e7fe055fb21811a01ff6b"
-    sha256 cellar: :any_skip_relocation, arm64_linux:   "fbfca354719211a24866dd87ac33a343191cfa0a13ff8ba8a604a288a2df891c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "aa79e425ff77b2ea640dff5d8eeeddb772bb42a39397ed111fecc59479027d25"
+    root_url "https://github.com/moosingin3space/homebrew-tap/releases/download/spotifyd-linux-0.4.2"
+    sha256 cellar: :any_skip_relocation, arm64_linux:  "31e4ed79daa7b30e1ac53722570a05afa264acae05f377e20d7dd3a9000ed0d5"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "284164de1604b35b0f3d7ce387b4cfdaf08d6245c76ffd74928bab024cca28b7"
   end
 
   depends_on "pkgconf" => :build
